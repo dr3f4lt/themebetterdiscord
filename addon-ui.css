@@ -1,26 +1,105 @@
 /*! DayZ Theme Addon UI - Adaptado por ChatGPT */
-.visual-refresh .bd-store-card,
-.visual-refresh .bd-addon-store-card,
-.visual-refresh .bd-addon-card {
-  background: rgba(22, 22, 22, 0.85);
-  border: 1px solid rgba(255, 0, 0, 0.2);
-  transition: border-color 0.3s ease;
+
+/* === GERAL === */
+:root {
+  --main-bg-color: rgba(22, 22, 22, 0.85); /* Fundo escuro padrão */
+  --main-text-color: #ffffff; /* Texto principal branco */
+  --hover-color: #d30000; /* Cor de hover vermelha */
+  --highlight-color: #ff0000; /* Cor de destaque */
+  --border-color: #ff0000; /* Cor da borda */
+  --active-item-color: #ff4500; /* Cor para itens ativos */
+  --secondary-bg-color: rgba(18, 18, 18, 0.8); /* Fundo secundário */
+  --channel-bg-color: rgba(22, 22, 22, 0.9); /* Fundo do canal */
+  --input-bg-color: rgba(0, 0, 0, 0.7); /* Fundo do input */
+  --scrollbar-color: rgba(255, 0, 0, 0.3); /* Cor da barra de rolagem */
 }
 
-.visual-refresh .bd-store-card:hover,
-.visual-refresh .bd-addon-store-card:hover,
-.visual-refresh .bd-addon-card:hover {
-  background: rgba(32, 32, 32, 0.9);
-  box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
-  border-color: #ff0000; /* Cor estilo "alerta" do DayZ */
+/* === GERAL - TEMPO E ANIMAÇÕES === */
+* {
+  transition: all 0.3s ease;
 }
 
-.visual-refresh .bd-addon-store-card .bd-addon-store-card-tag {
-  background: transparent;
-  border: 1px solid #ff0000;
-  color: #ff0000;
+/* === FONTE PRINCIPAL === */
+*,
+*:before,
+*:after {
+  font-family: 'Share Tech Mono', monospace;
 }
 
-.visual-refresh .bd-addon-header {
-  background: rgba(18, 18, 18, 0.85);
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
 }
+
+/* === FUNDO DO APP === */
+.app-1gGEbF {
+  background-color: var(--main-bg-color) !important;
+  background-image: url('https://i.postimg.cc/BbYRC3P9/dayz-video-games-wallpaper-preview.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  filter: brightness(0.7) contrast(1.2);
+}
+
+/* === CÂMARA LATERAL === */
+.guilds-3rhn52 {
+  background-color: var(--channel-bg-color);
+  border-right: 2px solid var(--border-color);
+}
+
+/* === CABELA E BARRA DE CANAL === */
+.container-3T6nTS {
+  background-color: var(--secondary-bg-color);
+}
+
+.channelName-2Zq7k6 {
+  color: var(--main-text-color);
+  font-size: 16px;
+}
+
+/* === CANAIS ATIVOS === */
+.channel-3bPzpn {
+  background-color: var(--highlight-color);
+  color: #ffffff;
+}
+
+/* === MENSAGENS === */
+.message-2qnXI6 {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--main-text-color);
+}
+
+.message-2qnXI6:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-left: 5px solid var(--highlight-color);
+}
+
+/* === INPUT DE TEXTO === */
+.container-2D4t3r {
+  background-color: var(--input-bg-color);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.textArea-2S3RMx {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--main-text-color);
+}
+
+/* === BARRA LATERAL E ÁREAS DO TEMA === */
+.sidebar-3s5SHF {
+  background-color: var(--secondary-bg-color);
+}
+
+.header-2h-KaC {
+  background-color: var(--secondary-bg-color);
+}
+
+/* === ICONES DE CARGA === */
+.spinner-2zPRq2 {
+  color: var(--highlight-color);
+  border-color: var(--highlight-color);
+}
+
+/* === BARRA DE ROL*

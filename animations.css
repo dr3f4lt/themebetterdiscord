@@ -1,11 +1,63 @@
 /*! DayZ Theme Animations - Adaptado por ChatGPT */
+
+/* Animação de entrada para canais */
 @keyframes dayz-channel-slide-in {
   from { right: 100%; }
   to { right: 0; }
 }
 
+.dayz-channel-slide-in {
+  animation: dayz-channel-slide-in 0.3s ease-out;
+}
+
+/* Animação de pulso para os cartões */
 @keyframes dayz-card-pulse {
   0% { opacity: 0.7; }
   50% { opacity: 0.3; }
   100% { opacity: 0.7; }
+}
+
+.dayz-card-pulse {
+  animation: dayz-card-pulse 1.5s infinite ease-in-out;
+}
+
+/* Efeito de brilho para botões e elementos interativos */
+@keyframes dayz-glow {
+  0% { box-shadow: 0 0 5px rgba(255, 0, 0, 0.5); }
+  50% { box-shadow: 0 0 15px rgba(255, 0, 0, 1); }
+  100% { box-shadow: 0 0 5px rgba(255, 0, 0, 0.5); }
+}
+
+.dayz-glow {
+  animation: dayz-glow 1.5s ease-in-out infinite;
+}
+
+/* Animação de fade in */
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+/* Animação de fade out */
+@keyframes fade-out {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.fade-out {
+  animation: fade-out 1s ease-in;
+}
+
+/* Animação para seleções de canais */
+@keyframes dayz-channel-highlight {
+  0% { background-color: rgba(255, 0, 0, 0.2); }
+  100% { background-color: rgba(255, 0, 0, 0.4); }
+}
+
+.dayz-channel-highlight {
+  animation: dayz-channel-highlight 0.3s ease-out;
 }
