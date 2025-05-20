@@ -1,0 +1,11 @@
+/*! DayZ Theme Animations - Adaptado por ChatGPT */
+@keyframes dayz-channel-slide-in {
+  from { right: 100%; }
+  to { right: 0; }
+}
+
+@keyframes dayz-card-pulse {
+  0% { opacity: 0.7; }
+  50% { opacity: 0.3; }
+  100% { opacity: 0.7; }
+}

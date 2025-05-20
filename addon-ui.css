@@ -1,0 +1,26 @@
+/*! DayZ Theme Addon UI - Adaptado por ChatGPT */
+.visual-refresh .bd-store-card,
+.visual-refresh .bd-addon-store-card,
+.visual-refresh .bd-addon-card {
+  background: rgba(22, 22, 22, 0.85);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  transition: border-color 0.3s ease;
+}
+
+.visual-refresh .bd-store-card:hover,
+.visual-refresh .bd-addon-store-card:hover,
+.visual-refresh .bd-addon-card:hover {
+  background: rgba(32, 32, 32, 0.9);
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+  border-color: #ff0000; /* Cor estilo "alerta" do DayZ */
+}
+
+.visual-refresh .bd-addon-store-card .bd-addon-store-card-tag {
+  background: transparent;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+
+.visual-refresh .bd-addon-header {
+  background: rgba(18, 18, 18, 0.85);
+}
